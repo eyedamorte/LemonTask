@@ -28,7 +28,7 @@ class NormalLoginForm extends React.Component {
       console.log(values);
 
           this.props.onAuth(values.username, values.password);
-          this.props.history.push('/news');
+          this.props.history.push('/profile');
 
     };
 
@@ -41,7 +41,7 @@ class NormalLoginForm extends React.Component {
             <div class="col-5">
 
 
-            {  }
+
                 {
                     this.props.loading ?
 
@@ -63,6 +63,12 @@ class NormalLoginForm extends React.Component {
                         </FormItem>
 
                         <FormItem className='button'>
+                        { this.props.error ?
+                          <p style={{fontSize:'20px', fontWeight: 'bold'}}>{this.props.error}</p>
+                          :
+                          <div></div>
+
+                         }
                         <Button  type="primary" htmlType="submit" style={{marginRight: '10px'}}>
                             Войти
                         </Button>
