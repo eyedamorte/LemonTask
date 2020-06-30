@@ -1,0 +1,7 @@
+__pycache__
+migrations
+/env
+env/
+mydatabase
+.sqlite3
+node_modules
