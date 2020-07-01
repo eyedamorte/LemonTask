@@ -20,9 +20,6 @@ class NormalLoginForm extends React.Component {
             <p>{this.props.error}</p>
         );
     }
-    const background = {
-      maxWidth: '100%'
-    }
 
     const onFinish = values => {
       console.log(values);
@@ -36,9 +33,9 @@ class NormalLoginForm extends React.Component {
 
     return (
         <div>
-        <div class="container">
-          <div class="row">
-            <div class="col-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-5">
 
 
 
@@ -50,7 +47,7 @@ class NormalLoginForm extends React.Component {
                     :
 
                     <Form onFinish={onFinish} className="login-form">
-                        <img maxWidth='100%' src={icongr} alt="logo" />
+                        <img src={icongr} alt="logo" />
                         <h1 className='title'>профиль</h1>
                         <FormItem name="username">
 
@@ -79,7 +76,7 @@ class NormalLoginForm extends React.Component {
 
 
             </div>
-            <div className="col-7 greenbg"> <img maxWidth='70%' maxHeight='50%' className="background" src={bg}/></div>
+            <div className="col-md-7 greenbg"> <img className="background" src={bg}/></div>
 </div>
 </div>
       </div>

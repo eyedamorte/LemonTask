@@ -61,8 +61,6 @@ export const authLogin = (username, password) => {
           dispatch(authFail('Неправильный пароль'));
         }
 
-
-
     }
 }
 

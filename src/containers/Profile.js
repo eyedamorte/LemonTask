@@ -14,7 +14,7 @@ class NormalLoginForm extends React.Component {
 
     return (
       <div>
-        {this.props.isLogin==true ?
+        {this.props.isLogin ?
 
           <div>
             <Avatar style={{backgroundColor: '#87d068' }} icon={<UserOutlined />} />
